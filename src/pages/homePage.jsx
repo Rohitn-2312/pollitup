@@ -15,6 +15,14 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+const mystyle={
+    textAlign: "Center",
+    color:"Black",
+    backgroundImage: 'linear-gradient(to bottom, #f0f0f0, #e5e5e5)',
+    padding:"20px",
+    border: 'Solid',
+    borderImage: 'linear-gradient(to right, black, grey) 1',
+    }
 
 export default function homePage(){
     return (
@@ -82,7 +90,7 @@ export default function homePage(){
                 <Button colorScheme="blue" variant="solid" my={4} leftIcon={<DownloadIcon />}>Download for mobile/desktop</Button>
             </Container> */}
 
-            <Container maxW="container.lg" p={12}>
+            <Container style={mystyle} maxW="container.lg" p={12}>
                 <Heading as="h2" size="xl" my={2}
                 >Open source!</Heading>
                 <Text fontSize="lg">
